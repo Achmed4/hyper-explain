@@ -1,0 +1,119 @@
+/* === Header === */
+
+header {
+    // Top-Bar
+    section {
+        background: url('../img/bg_pttrn.png') repeat;
+        background-color: $topbarbg;
+        height: 30px;
+        @include flexbox($justify-content: flex-start);
+        > ul li {
+            padding: $zero $ten;
+            a {
+                display: block;
+                color: $headerbg;
+                &:hover {
+                    color: rgba(28, 34, 39, 0.54);
+                }
+            }
+        }
+    }
+    // Nav-Bar
+    main {
+        position: relative;
+        height: 60px;
+        background-color: $headerbg;
+        @include flexbox($justify-content: space-between);
+        > ul li {
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            margin-left: 15px;
+            position: relative;
+            > a {
+                display: block;
+                color: $white;
+                font-weight: bold;
+                text-transform: uppercase;
+                i {
+                    color: $mainColor;
+                }
+            }
+            // Dropdown-Menu
+            > div {
+                min-width: 360px;
+                min-height: 125px;
+                position: absolute;
+                top: 100%;
+                opacity: $zero;
+                visibility: hidden;
+                background: rgba(40,40,40,0.95);
+                padding: $ten !important;
+                z-index: 1;
+                > a {
+                    display: inline-block;
+                    border-radius: 5px;
+                    width: 100px;
+                    height: 100px;
+                    color: $white;
+                    text-align: center;
+                    padding: 5px;
+                    &:nth-child(3n+1) {
+                        margin-left: 0;
+                    }
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.15);
+                    }
+                    > .image {
+                        height: 60px;
+                        margin: $zero auto;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    > .image ~ div {
+                        @include flexbox;
+                        height: 40px;
+                    }
+                }
+            }
+            &:hover {
+                > div {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        // Logo
+        figure {
+            top: -50%;
+            right: -50%;
+            transform: translate(-50%, 0);
+            a {
+                @include flexbox;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                border: 5px solid $headerbg;
+                background: $headerbg;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        // Search
+        > a {
+            @include flexbox;
+            height: 100%;
+            width: 70px;
+            font-size: 27px;
+            background: $mainColor;
+            color: $headerbg;
+            transition: $transition;
+            &:hover {
+                background: $headerbg;
+                color: $mainColor;
+            }
+        }
+    }
+}

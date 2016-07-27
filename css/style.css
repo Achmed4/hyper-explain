@@ -1,62 +1,211 @@
-/*
-Error: File to import not found or unreadable: _layout/_header.scss.
-       Load path: C:/Users/Hyper Design2/hyper-explain/sass
-        on line 13 of sass/style.scss
+/* === Importing Helpers === */
+/* === Variables === */
+/* === Mixins === */
+/* === Main Style === */
+* {
+  box-sizing: border-box; }
 
-8: // body {
-9: //     font-size: 16px;
-10: // }
-11: 
-12: /* === Importing Layout === *\/
-13: @import "_layout/_header.scss";
-14: @import "_components/_carousel1.scss";
-15: @import "_layout/_featured-products.scss";
-16: @import "_layout/_articles.scss";
-17: @import "_layout/_testimonials.scss";
-18: @import "_layout/_footer.scss";
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
-Backtrace:
-sass/style.scss:13
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: _layout/_header.scss.\A        Load path: C:/Users/Hyper Design2/hyper-explain/sass\A         on line 13 of sass/style.scss\A \A 8: // body {\A 9: //     font-size: 16px;\A 10: // }\A 11: \A 12: /* === Importing Layout === */\A 13: @import \"_layout/_header.scss\";\A 14: @import \"_components/_carousel1.scss\";\A 15: @import \"_layout/_featured-products.scss\";\A 16: @import \"_layout/_articles.scss\";\A 17: @import \"_layout/_testimonials.scss\";\A 18: @import \"_layout/_footer.scss\";"; }
+a {
+  text-decoration: none; }
+
+/* === Importing Layout === */
+/* === Header === */
+header section {
+  background: url("../img/bg_pttrn.png") repeat;
+  background-color: #dfe3e5;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  header section > ul li {
+    padding: 0 10px; }
+    header section > ul li a {
+      display: block;
+      color: #1c2227; }
+      header section > ul li a:hover {
+        color: rgba(28, 34, 39, 0.54); }
+header main {
+  position: relative;
+  height: 60px;
+  background-color: #1c2227;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header main > ul li {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15px;
+    position: relative; }
+    header main > ul li > a {
+      display: block;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase; }
+      header main > ul li > a i {
+        color: #DA0060; }
+    header main > ul li > div {
+      min-width: 360px;
+      min-height: 125px;
+      position: absolute;
+      top: 100%;
+      opacity: 0;
+      visibility: hidden;
+      background: rgba(40, 40, 40, 0.95);
+      padding: 10px !important;
+      z-index: 1; }
+      header main > ul li > div > a {
+        display: inline-block;
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        padding: 5px; }
+        header main > ul li > div > a:nth-child(3n+1) {
+          margin-left: 0; }
+        header main > ul li > div > a:hover {
+          background: rgba(255, 255, 255, 0.15); }
+        header main > ul li > div > a > .image {
+          height: 60px;
+          margin: 0 auto; }
+          header main > ul li > div > a > .image img {
+            width: 100%; }
+        header main > ul li > div > a > .image ~ div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px; }
+    header main > ul li:hover > div {
+      opacity: 1;
+      visibility: visible; }
+  header main figure {
+    top: -50%;
+    right: -50%;
+    transform: translate(-50%, 0); }
+    header main figure a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 5px solid #1c2227;
+      background: #1c2227; }
+      header main figure a img {
+        width: 100%; }
+  header main > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70px;
+    font-size: 27px;
+    background: #DA0060;
+    color: #1c2227;
+    transition: all 0.3s ease-in-out; }
+    header main > a:hover {
+      background: #1c2227;
+      color: #DA0060; }
+
+/* === Main === */
+header ~ main {
+  padding: 30px; }
+  header ~ main .col {
+    padding: 10px; }
+    header ~ main .col article {
+      position: relative;
+      padding-top: 55%;
+      margin-bottom: 23px; }
+      header ~ main .col article > div:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        header ~ main .col article > div:first-child img {
+          width: 100%; }
+      header ~ main .col article > div:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px; }
+        header ~ main .col article > div:last-child > a:first-child {
+          color: #DA0060;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold; }
+          header ~ main .col article > div:last-child > a:first-child:hover {
+            text-decoration: underline; }
+        header ~ main .col article > div:last-child > a:nth-child(2) h2 {
+          margin: 0;
+          color: white;
+          font-size: 30px; }
+        header ~ main .col article > div:last-child > p {
+          margin: 5px 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          header ~ main .col article > div:last-child > p > a:first-child {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 5px; }
+            header ~ main .col article > div:last-child > p > a:first-child img {
+              width: 100%; }
+          header ~ main .col article > div:last-child > p > span {
+            color: white;
+            margin-right: 5px; }
+            header ~ main .col article > div:last-child > p > span:last-of-type {
+              font-size: 13px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              header ~ main .col article > div:last-child > p > span:last-of-type::before, header ~ main .col article > div:last-child > p > span:last-of-type::after {
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: white;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0 5px; }
+          header ~ main .col article > div:last-child > p > a:last-of-type {
+            color: lightskyblue;
+            margin-right: 5px; }
+            header ~ main .col article > div:last-child > p > a:last-of-type:hover {
+              text-decoration: underline; }
+          header ~ main .col article > div:last-child > p > button {
+            color: #DA0060;
+            background: transparent;
+            border: 0;
+            cursor: pointer; }
+
+/* === Framework === */
+.image-parent {
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative; }
+
+.image-cover {
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=style.css.map */

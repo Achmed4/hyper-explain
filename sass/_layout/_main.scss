@@ -1,0 +1,90 @@
+/* === Main === */
+
+header ~ main {
+    padding: 30px;
+    .col {
+        padding: $ten;
+        article {
+            position: relative;
+            padding-top: 55%;
+            margin-bottom: 23px;
+            > div:first-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            > div:last-child {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                padding: 15px;
+                > a:first-child {
+                    color: $mainColor;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                > a:nth-child(2) h2 {
+                    margin: $zero;
+                    color: $white;
+                    font-size: 30px;
+                }
+                > p {
+                    margin: 5px 0;
+                    @include flexbox($justify-content: flex-start);
+                    > a:first-child {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    > span {
+                        color: $white;
+                        margin-right: 5px;
+                        &:last-of-type {
+                            font-size: 13px;
+                            @include flexbox;
+                            &::before,
+                            &::after {
+                                content: '';
+                                width: 4px;
+                                height: 4px;
+                                background: white;
+                                display: inline-block;
+                                border-radius: 50%;
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                    > a:last-of-type {
+                        color: lightskyblue;
+                        margin-right: 5px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    > button {
+                        color: $mainColor;
+                        background: $transparent;
+                        border: $zero;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -116,60 +116,59 @@ header main {
 /* === Main === */
 header ~ main {
   padding: 30px; }
-  header ~ main .col {
+  header ~ main .section.group .col {
     padding: 10px; }
-    header ~ main .col article {
+    header ~ main .section.group .col article {
       position: relative;
-      padding-top: 55%;
-      margin-bottom: 23px; }
-      header ~ main .col article > div:first-child {
+      padding-top: 55%; }
+      header ~ main .section.group .col article > div:first-child {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
-        header ~ main .col article > div:first-child img {
+        header ~ main .section.group .col article > div:first-child img {
           width: 100%; }
-      header ~ main .col article > div:last-child {
+      header ~ main .section.group .col article > div:last-child {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.8);
         padding: 15px; }
-        header ~ main .col article > div:last-child > a:first-child {
+        header ~ main .section.group .col article > div:last-child > a:first-child {
           color: #DA0060;
           text-transform: uppercase;
           font-size: 14px;
           font-weight: bold; }
-          header ~ main .col article > div:last-child > a:first-child:hover {
+          header ~ main .section.group .col article > div:last-child > a:first-child:hover {
             text-decoration: underline; }
-        header ~ main .col article > div:last-child > a:nth-child(2) h2 {
+        header ~ main .section.group .col article > div:last-child > a:nth-child(2) h2 {
           margin: 0;
           color: white;
           font-size: 30px; }
-        header ~ main .col article > div:last-child > p {
+        header ~ main .section.group .col article > div:last-child > p {
           margin: 5px 0;
           display: flex;
           justify-content: flex-start;
           align-items: center; }
-          header ~ main .col article > div:last-child > p > a:first-child {
+          header ~ main .section.group .col article > div:last-child > p > a:first-child {
             display: inline-block;
             width: 25px;
             height: 25px;
             border-radius: 50%;
             margin-right: 5px; }
-            header ~ main .col article > div:last-child > p > a:first-child img {
+            header ~ main .section.group .col article > div:last-child > p > a:first-child img {
               width: 100%; }
-          header ~ main .col article > div:last-child > p > span {
+          header ~ main .section.group .col article > div:last-child > p > span {
             color: white;
             margin-right: 5px; }
-            header ~ main .col article > div:last-child > p > span:last-of-type {
+            header ~ main .section.group .col article > div:last-child > p > span:last-of-type {
               font-size: 13px;
               display: flex;
               justify-content: center;
               align-items: center; }
-              header ~ main .col article > div:last-child > p > span:last-of-type::before, header ~ main .col article > div:last-child > p > span:last-of-type::after {
+              header ~ main .section.group .col article > div:last-child > p > span:last-of-type::before, header ~ main .section.group .col article > div:last-child > p > span:last-of-type::after {
                 content: '';
                 width: 4px;
                 height: 4px;
@@ -177,16 +176,58 @@ header ~ main {
                 display: inline-block;
                 border-radius: 50%;
                 margin: 0 5px; }
-          header ~ main .col article > div:last-child > p > a:last-of-type {
+              header ~ main .section.group .col article > div:last-child > p > span:last-of-type i {
+                margin-right: 3px; }
+          header ~ main .section.group .col article > div:last-child > p > a:last-of-type {
             color: lightskyblue;
             margin-right: 5px; }
-            header ~ main .col article > div:last-child > p > a:last-of-type:hover {
+            header ~ main .section.group .col article > div:last-child > p > a:last-of-type:hover {
               text-decoration: underline; }
-          header ~ main .col article > div:last-child > p > button {
+          header ~ main .section.group .col article > div:last-child > p > button {
             color: #DA0060;
             background: transparent;
             border: 0;
             cursor: pointer; }
+  @media (max-width: 767px) {
+    header ~ main .section.group:first-child .col.span_8_of_12 {
+      width: 100% !important; }
+    header ~ main .section.group:first-child .col.span_4_of_12 {
+      width: 100% !important; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    header ~ main .section.group:first-child .col.span_8_of_12 {
+      width: 100%; }
+    header ~ main .section.group:first-child .col.span_4_of_12 {
+      width: 49.2%; }
+    header ~ main .section.group:first-child .col.col:nth-child(2) {
+      margin-left: 0;
+      margin-bottom: 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    header ~ main .section.group:first-child .col.span_8_of_12 {
+      width: 100%; }
+    header ~ main .section.group:first-child .col.span_4_of_12 {
+      width: 49.2%; }
+    header ~ main .section.group:first-child .col.col:nth-child(2) {
+      margin-left: 0;
+      margin-bottom: 0; } }
+  @media (min-width: 1200px) {
+    header ~ main .section.group:first-child .col.col {
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    header ~ main .section.group:last-child .col.span_4_of_12 {
+      width: 100%; }
+    header ~ main .section.group:last-child .col.col {
+      margin-left: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    header ~ main .section.group:last-child .col.span_4_of_12 {
+      width: 49.2%; }
+    header ~ main .section.group:last-child .col.col:nth-child(2n+1) {
+      margin-left: 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    header ~ main .section.group:last-child .col.span_4_of_12 {
+      width: 49.2%; }
+    header ~ main .section.group:last-child .col.col:nth-child(2n+1) {
+      margin-left: 0; } }
 
 /* === Framework === */
 .image-parent {

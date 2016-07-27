@@ -1,0 +1,22 @@
+/* === Importing Helpers === */
+@import "_helpers/_variables.scss";
+@import "_helpers/_mixins.scss";
+
+/* === Main Style === */
+@include mainstyle;
+
+// body {
+//     font-size: 16px;
+// }
+
+/* === Importing Layout === */
+@import "_layout/_header.scss";
+@import "_components/_carousel1.scss";
+@import "_layout/_featured-products.scss";
+@import "_layout/_articles.scss";
+@import "_layout/_testimonials.scss";
+@import "_layout/_footer.scss";
+
+
+/* === Framework === */
+@include image-bg;

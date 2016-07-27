@@ -101,7 +101,38 @@ header ~ main {
                         width: 100% !important;
                     }
                     &.col {
-
+                        margin-left: 0;
+                        article {
+                            > div:last-child {
+                                position: relative;
+                                background: $headerbg;
+                                > a:nth-child(2) h2 {
+                                    font-size: 18px;
+                                }
+                                > p {
+                                    display: block;
+                                    > a:first-child {
+                                        display: none;
+                                    }
+                                    > span:first-of-type {
+                                        display: inline-block;
+                                        margin-bottom: 5px;
+                                    }
+                                    > a:last-of-type {
+                                        display: inline-block;
+                                        margin-bottom: 5px;
+                                    }
+                                    > span:last-of-type {
+                                        display: block;
+                                        margin-bottom: 5px;
+                                        &::before,
+                                        &::after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 @media (min-width: 768px) and (max-width: 991px) {
@@ -114,6 +145,20 @@ header ~ main {
                     &.col:nth-child(2) {
                         margin-left: 0;
                         margin-bottom: 0;
+                    }
+                    &.span_4_of_12 {
+                        article {
+                            > div:last-child {
+                                > a:nth-child(2) h2 {
+                                    font-size: 22px;
+                                }
+                                > p {
+                                    > a:first-child {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 @media (min-width: 992px) and (max-width: 1199px) {
@@ -144,6 +189,37 @@ header ~ main {
                     }
                     &.col {
                         margin-left: 0;
+                        article {
+                            > div:last-child {
+                                position: relative;
+                                background: $headerbg;
+                                > a:nth-child(2) h2 {
+                                    font-size: 18px;
+                                }
+                                > p {
+                                    display: block;
+                                    > a:first-child {
+                                        display: none;
+                                    }
+                                    > span:first-of-type {
+                                        display: inline-block;
+                                        margin-bottom: 5px;
+                                    }
+                                    > a:last-of-type {
+                                        display: inline-block;
+                                        margin-bottom: 5px;
+                                    }
+                                    > span:last-of-type {
+                                        display: block;
+                                        margin-bottom: 5px;
+                                        &::before,
+                                        &::after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 @media (min-width: 768px) and (max-width: 991px) {
@@ -153,6 +229,21 @@ header ~ main {
                     &.col:nth-child(2n+1) {
                         margin-left: 0;
                     }
+                    &.span_4_of_12 {
+                        article {
+                            > div:last-child {
+                                > a:nth-child(2) h2 {
+                                    font-size: 22px;
+                                }
+                                > p {
+                                    > a:first-child {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 }
                 @media (min-width: 992px) and (max-width: 1199px) {
                     &.span_4_of_12 {
@@ -167,5 +258,21 @@ header ~ main {
                 }
             }
         }
+    }
+    @media (max-width: 767px) {
+        & {
+            padding: 30px 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        & {
+            padding: 30px 0;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    }
+    @media (min-width: 1200px) {
+
     }
 }

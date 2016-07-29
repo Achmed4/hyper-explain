@@ -3,7 +3,7 @@
 header {
     // Top-Bar
     section {
-        background: url('../img/bg_pttrn.png') repeat;
+        background: url('../img/stripes.png') repeat;
         background-color: $topbarbg;
         height: 30px;
         @include flexbox($justify-content: flex-start);
@@ -49,6 +49,8 @@ header {
                 visibility: hidden;
                 background: rgba(40,40,40,0.95);
                 padding: $ten !important;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
                 z-index: 1;
                 > a {
                     display: inline-block;
@@ -86,6 +88,7 @@ header {
         }
         // Logo
         figure {
+            margin: 0;
             top: -50%;
             right: -50%;
             transform: translate(-50%, 0);
@@ -102,17 +105,51 @@ header {
             }
         }
         // Search
-        > a {
+        > form {
             @include flexbox;
             height: 100%;
-            width: 70px;
-            font-size: 27px;
-            background: $mainColor;
-            color: $headerbg;
-            transition: $transition;
-            &:hover {
-                background: $headerbg;
-                color: $mainColor;
+            position: relative;
+            button {
+                width: 70px;
+                height: 100%;
+                font-size: 27px;
+                background: $mainColor;
+                color: $headerbg;
+                border: $zero;
+                outline: $zero;
+                cursor: pointer;
+                transition: $transition;
+                z-index: 1;
+                &:hover {
+                    background: $headerbg;
+                    color: $mainColor;
+                }
+            }
+            input {
+                height: 100%;
+                border: $zero;
+                outline: $zero;
+                background: #666;
+                color: $white;
+                transition: $transition;
+                width: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                right: 70px;
+                &:focus {
+                    width: 200px;
+                    opacity: 1;
+                    padding: $zero $ten;
+                }
+                &[placeholder] {
+                   color: $white;
+                }
+            }
+            &:hover input {
+                width: 200px;
+                opacity: 1;
+                padding: $zero $ten;
             }
         }
     }

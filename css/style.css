@@ -126,7 +126,7 @@ header main {
       height: 100%;
       border: 0;
       outline: 0;
-      background: #666;
+      background: #333;
       color: white;
       transition: all 0.3s ease-in-out;
       width: 0;
@@ -147,9 +147,9 @@ header main {
 
 /* === Main === */
 header ~ main {
-  padding: 30px; }
+  padding: 20px; }
   header ~ main .section.group .col {
-    padding: 10px; }
+    padding-bottom: 10px; }
     header ~ main .section.group .col article {
       position: relative;
       padding-top: 55%; }
@@ -175,7 +175,7 @@ header ~ main {
           font-weight: bold; }
           header ~ main .section.group .col article > div:last-child > a:first-child:hover {
             text-decoration: underline; }
-        header ~ main .section.group .col article > div:last-child > a:nth-child(2) h2 {
+        header ~ main .section.group .col article > div:last-child > a:nth-child(2) h3 {
           margin: 0;
           color: white;
           font-size: 30px; }
@@ -312,10 +312,130 @@ header ~ main {
       margin-left: 0; } }
   @media (max-width: 767px) {
     header ~ main {
-      padding: 30px 0; } }
+      padding: 20px 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
     header ~ main {
-      padding: 30px 0; } }
+      padding: 20px 0; } }
+
+/* === Articles === */
+main ~ article {
+  padding: 20px; }
+  main ~ article .section.group .col main {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0;
+    border-bottom: 1px solid #dfe3e5;
+    clear: both; }
+    main ~ article .section.group .col main:hover {
+      background: #dfe3e5; }
+    main ~ article .section.group .col main > div:first-child {
+      width: 40%;
+      height: 100%;
+      float: left; }
+      main ~ article .section.group .col main > div:first-child img {
+        width: 100%; }
+    main ~ article .section.group .col main > div:last-child {
+      width: 60%;
+      height: 100%;
+      text-align: left;
+      padding-left: 10px;
+      float: right; }
+      main ~ article .section.group .col main > div:last-child > a:first-child {
+        color: #DA0060;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold; }
+        main ~ article .section.group .col main > div:last-child > a:first-child:hover {
+          text-decoration: underline; }
+      main ~ article .section.group .col main > div:last-child > a:nth-child(2) h3 {
+        margin: 0;
+        color: black;
+        font-size: 30px; }
+      main ~ article .section.group .col main > div:last-child > p:nth-child(3) {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        height: 90px;
+        overflow: hidden; }
+      main ~ article .section.group .col main > div:last-child > p:last-child {
+        margin: 5px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        main ~ article .section.group .col main > div:last-child > p:last-child > a:first-child {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin-right: 5px; }
+          main ~ article .section.group .col main > div:last-child > p:last-child > a:first-child img {
+            width: 100%; }
+        main ~ article .section.group .col main > div:last-child > p:last-child > span {
+          color: #777;
+          margin-right: 5px; }
+          main ~ article .section.group .col main > div:last-child > p:last-child > span:last-of-type {
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            main ~ article .section.group .col main > div:last-child > p:last-child > span:last-of-type::before, main ~ article .section.group .col main > div:last-child > p:last-child > span:last-of-type::after {
+              content: '';
+              width: 4px;
+              height: 4px;
+              background: #777;
+              display: inline-block;
+              border-radius: 50%;
+              margin: 0 5px; }
+            main ~ article .section.group .col main > div:last-child > p:last-child > span:last-of-type i {
+              margin-right: 3px; }
+        main ~ article .section.group .col main > div:last-child > p:last-child > a:last-of-type {
+          color: steelblue;
+          margin-right: 5px; }
+          main ~ article .section.group .col main > div:last-child > p:last-child > a:last-of-type:hover {
+            text-decoration: underline; }
+        main ~ article .section.group .col main > div:last-child > p:last-child > button {
+          color: #DA0060;
+          background: transparent;
+          border: 0;
+          cursor: pointer; }
+  main ~ article .section.group .col .title {
+    margin-top: 0; }
+    main ~ article .section.group .col .title::before {
+      content: '';
+      width: 35px;
+      height: 3px;
+      background: #DA0060;
+      display: block;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out; }
+    main ~ article .section.group .col .title:hover::before {
+      width: 160px; }
+  main ~ article .section.group .col aside {
+    margin-bottom: 10px; }
+    main ~ article .section.group .col aside a {
+      position: relative;
+      display: block; }
+      main ~ article .section.group .col aside a img {
+        width: 100%; }
+      main ~ article .section.group .col aside a h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px 5px 10px 0px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white; }
+        main ~ article .section.group .col aside a h3 span {
+          width: 40px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          background: #DA0060;
+          color: white;
+          margin-right: 8px; }
 
 /* === Framework === */
 .image-parent {

@@ -1,0 +1,59 @@
+/* === Footer === */
+
+footer {
+    padding: $mainPadding;
+    text-align: center;
+    background: $headerbg;
+    color: $white;
+    form {
+        @include flexbox;
+        input {
+            padding: $ten;
+            margin-right: 3px;
+            outline: $zero;
+        }
+        button {
+            padding: $ten 30px;
+            cursor: pointer;
+            background: $mainColor;
+            color: $headerbg;
+            border: 2px solid $mainColor;
+            font-weight: bold;
+            transition: $transition;
+            &:hover {
+                background: $headerbg;
+                color: $mainColor;
+            }
+        }
+        @media (max-width: 410px) {
+            & {
+                display: block;
+                input {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    hr {
+        margin: 40px 0;
+        border-color: $textColor;
+    }
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            a {
+                color: $white;
+                font-size: 15px;
+                &:hover {
+                    color: $mainColor;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

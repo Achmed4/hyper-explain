@@ -1,0 +1,24 @@
+/* === Pagination === */
+
+article ~ ul {
+    padding: $mainPadding;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        border: 1px solid $topbarbg;
+        &.active a {
+            background: $headerbg;
+            color: $white;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            color: $black;
+            &:hover {
+                background: $headerbg;
+                color: $white;
+            }
+        }
+    }
+}

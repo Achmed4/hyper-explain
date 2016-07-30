@@ -26,13 +26,13 @@ header section {
     padding: 0 10px; }
     header section > ul li a {
       display: block;
-      color: #1c2227; }
+      color: #000019; }
       header section > ul li a:hover {
         color: rgba(28, 34, 39, 0.54); }
 header main {
   position: relative;
   height: 60px;
-  background-color: #1c2227;
+  background-color: #000019;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -98,8 +98,8 @@ header main {
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      border: 5px solid #1c2227;
-      background: #1c2227; }
+      border: 5px solid #000019;
+      background: #000019; }
       header main figure a img {
         width: 100%; }
   header main > form {
@@ -113,14 +113,14 @@ header main {
       height: 100%;
       font-size: 27px;
       background: #DA0060;
-      color: #1c2227;
+      color: #000019;
       border: 0;
       outline: 0;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       z-index: 1; }
       header main > form button:hover {
-        background: #1c2227;
+        background: #000019;
         color: #DA0060; }
     header main > form input {
       height: 100%;
@@ -229,7 +229,7 @@ header ~ main {
       margin-left: 0; }
       header ~ main .section.group:first-child .col.col article > div:last-child {
         position: relative;
-        background: #1c2227; }
+        background: #000019; }
         header ~ main .section.group:first-child .col.col article > div:last-child > a:nth-child(2) h2 {
           font-size: 18px; }
         header ~ main .section.group:first-child .col.col article > div:last-child > p {
@@ -278,7 +278,7 @@ header ~ main {
       margin-left: 0; }
       header ~ main .section.group:last-child .col.col article > div:last-child {
         position: relative;
-        background: #1c2227; }
+        background: #000019; }
         header ~ main .section.group:last-child .col.col article > div:last-child > a:nth-child(2) h2 {
           font-size: 18px; }
         header ~ main .section.group:last-child .col.col article > div:last-child > p {
@@ -482,6 +482,71 @@ main ~ article {
           margin-left: 0; }
         main ~ article .section.group .col > aside:nth-of-type(3n+1) {
           margin-left: 0; } }
+
+/* === Pagination === */
+article ~ ul {
+  padding: 20px;
+  text-align: center; }
+  article ~ ul li {
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #dfe3e5; }
+    article ~ ul li.active a {
+      background: #000019;
+      color: white; }
+    article ~ ul li a {
+      display: block;
+      padding: 10px;
+      color: black; }
+      article ~ ul li a:hover {
+        background: #000019;
+        color: white; }
+
+/* === Footer === */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000019;
+  color: white; }
+  footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer form input {
+      padding: 10px;
+      margin-right: 3px;
+      outline: 0; }
+    footer form button {
+      padding: 10px 30px;
+      cursor: pointer;
+      background: #DA0060;
+      color: #000019;
+      border: 2px solid #DA0060;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out; }
+      footer form button:hover {
+        background: #000019;
+        color: #DA0060; }
+    @media (max-width: 410px) {
+      footer form {
+        display: block; }
+        footer form input {
+          width: 100%;
+          margin-bottom: 10px; }
+        footer form button {
+          width: 100%; } }
+  footer hr {
+    margin: 40px 0;
+    border-color: #777; }
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px; }
+    footer ul li a {
+      color: white;
+      font-size: 15px; }
+      footer ul li a:hover {
+        color: #DA0060;
+        text-decoration: underline; }
 
 /* === Framework === */
 .image-parent {

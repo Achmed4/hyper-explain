@@ -92,6 +92,7 @@ header {
             top: -50%;
             right: -50%;
             transform: translate(-50%, 0);
+            z-index: 9;
             a {
                 @include flexbox;
                 width: 90px;

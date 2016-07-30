@@ -13,6 +13,25 @@ ul, li {
 a {
   text-decoration: none; }
 
+.image-parent {
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative; }
+
+.image-cover {
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 /* === Importing Layout === */
 /* === Header === */
 header section {
@@ -90,7 +109,8 @@ header main {
     margin: 0;
     top: -50%;
     right: -50%;
-    transform: translate(-50%, 0); }
+    transform: translate(-50%, 0);
+    z-index: 9; }
     header main figure a {
       display: flex;
       justify-content: center;
@@ -230,7 +250,7 @@ header ~ main {
       header ~ main .section.group:first-child .col.col article > div:last-child {
         position: relative;
         background: #000019; }
-        header ~ main .section.group:first-child .col.col article > div:last-child > a:nth-child(2) h2 {
+        header ~ main .section.group:first-child .col.col article > div:last-child > a:nth-child(2) h3 {
           font-size: 18px; }
         header ~ main .section.group:first-child .col.col article > div:last-child > p {
           display: block; }
@@ -255,7 +275,7 @@ header ~ main {
     header ~ main .section.group:first-child .col.col:nth-child(2) {
       margin-left: 0;
       margin-bottom: 0; }
-    header ~ main .section.group:first-child .col.span_4_of_12 article > div:last-child > a:nth-child(2) h2 {
+    header ~ main .section.group:first-child .col.span_4_of_12 article > div:last-child > a:nth-child(2) h3 {
       font-size: 22px; }
     header ~ main .section.group:first-child .col.span_4_of_12 article > div:last-child > p > a:first-child {
       display: none; } }
@@ -279,7 +299,7 @@ header ~ main {
       header ~ main .section.group:last-child .col.col article > div:last-child {
         position: relative;
         background: #000019; }
-        header ~ main .section.group:last-child .col.col article > div:last-child > a:nth-child(2) h2 {
+        header ~ main .section.group:last-child .col.col article > div:last-child > a:nth-child(2) h3 {
           font-size: 18px; }
         header ~ main .section.group:last-child .col.col article > div:last-child > p {
           display: block; }
@@ -301,7 +321,7 @@ header ~ main {
       width: 49.2%; }
     header ~ main .section.group:last-child .col.col:nth-child(2n+1) {
       margin-left: 0; }
-    header ~ main .section.group:last-child .col.span_4_of_12 article > div:last-child > a:nth-child(2) h2 {
+    header ~ main .section.group:last-child .col.span_4_of_12 article > div:last-child > a:nth-child(2) h3 {
       font-size: 22px; }
     header ~ main .section.group:last-child .col.span_4_of_12 article > div:last-child > p > a:first-child {
       display: none; } }
@@ -549,23 +569,5 @@ footer {
         text-decoration: underline; }
 
 /* === Framework === */
-.image-parent {
-  overflow: hidden;
-  vertical-align: middle;
-  position: relative; }
-
-.image-cover {
-  height: auto;
-  max-height: none;
-  max-width: none;
-  min-height: 100%;
-  min-width: 100%;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=style.css.map */

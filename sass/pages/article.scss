@@ -1,0 +1,170 @@
+/* === Importing Helpers === */
+@import "../_helpers/_variables.scss";
+@import "../_helpers/_mixins.scss";
+
+/* === Importing Layout === */
+@import "../_layout/_header.scss";
+@import "../_layout/_footer.scss";
+
+/* === Main Style === */
+@include mainstyle;
+@include image-bg;
+
+/* === Top-bar Background Image Path === */
+header section {
+    background: url("../../img/stripes.png") repeat;
+}
+
+/* === Article Page === */
+
+header ~ article {
+    padding: 0 $mainPadding;
+    .col {
+        margin: $zero;
+        overflow: hidden;
+        > div {
+            position: relative;
+            padding-top: 50%;
+            > div:first-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            > div:last-child {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 50%;
+                transform: translateX(-50%);
+                background: rgba(0, 0, 0, 0.8);
+                padding: 35px 10px;
+                text-align: center;
+                > a:first-child {
+                    color: $mainColor;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: bold;
+
+                    // New
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    width: auto;
+                    height: auto;
+                    transform: translate(-50%, -50%);
+                    padding: 10px;
+                    background: $mainColor;
+                    color: $black;
+                }
+                > h3 {
+                    margin: $zero;
+                    color: $white;
+                    font-size: 30px;
+                }
+                > p {
+                    margin: 5px 0;
+                    @include flexbox($justify-content: flex-start);
+                    > a:first-child {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    > span {
+                        color: $white;
+                        margin-right: 5px;
+                        &:last-of-type {
+                            font-size: 13px;
+                            @include flexbox;
+                            &::before,
+                            &::after {
+                                content: '';
+                                width: 4px;
+                                height: 4px;
+                                background: white;
+                                display: inline-block;
+                                border-radius: 50%;
+                                margin: 0 5px;
+                            }
+                            i {
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                    > a:last-of-type {
+                        color: lightskyblue;
+                        margin-right: 5px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        & {
+            .col {
+                > div {
+                    padding: $zero;
+                    > div:first-child {
+                        position: relative;
+                    }
+                    > div:last-child {
+                        position: relative;
+                        background: $headerbg;
+                        width: 100%;
+                        text-align: left;
+                        > h3 {
+                            font-size: 18px;
+                        }
+                        > p {
+                            display: block;
+                            > a:first-child {
+                                display: none;
+                            }
+                            > span:first-of-type {
+                                display: inline-block;
+                                margin-bottom: 5px;
+                            }
+                            > a:last-of-type {
+                                display: inline-block;
+                                margin-bottom: 5px;
+                            }
+                            > span:last-of-type {
+                                display: block;
+                                margin-bottom: 5px;
+                                &::before,
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        & {
+            padding: $zero;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        & {
+            padding: $zero;
+        }
+    }
+    @media (min-width: 1200px) {
+
+    }
+}

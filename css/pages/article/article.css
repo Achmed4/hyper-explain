@@ -75,10 +75,11 @@ header main {
       opacity: 1;
       visibility: visible; }
   header main figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
-    top: -50%;
-    right: -50%;
-    transform: translate(-50%, 0);
     z-index: 9; }
     header main figure a {
       display: flex;
@@ -333,7 +334,8 @@ a {
 
 /* === Top-bar Background Image Path === */
 header section {
-  background: url("../../../img/stripes.png") repeat; }
+  background: url("../../../img/stripes.png") repeat;
+  background-color: #dfe3e5; }
 
 /* === Article Page === */
 header ~ article {

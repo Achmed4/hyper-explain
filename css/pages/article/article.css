@@ -180,6 +180,126 @@ footer {
         color: #DA0060;
         text-decoration: underline; }
 
+/* === Article Section === */
+section {
+  padding: 20px 0; }
+  section .col {
+    padding: 10px; }
+    section .col:first-of-type {
+      position: relative;
+      padding-left: 80px; }
+      section .col:first-of-type p {
+        line-height: 1.7em; }
+      section .col:first-of-type a {
+        font-weight: bold;
+        color: #0c7fd7; }
+      section .col:first-of-type img {
+        width: 100%; }
+      section .col:first-of-type > div {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 80px;
+        text-align: center;
+        position: -webkit-sticky;
+        position: sticky; }
+        section .col:first-of-type > div:last-of-type {
+          display: inline; }
+        section .col:first-of-type > div a {
+          display: block;
+          margin: auto;
+          width: 40px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          margin-bottom: 10px; }
+          section .col:first-of-type > div a:nth-child(1) {
+            background: #3b5998; }
+          section .col:first-of-type > div a:nth-child(2) {
+            background: #0099e5; }
+          section .col:first-of-type > div a:nth-child(3) {
+            background: #dd4b39; }
+          section .col:first-of-type > div a:nth-child(4) {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            color: #777;
+            font-size: 25px; }
+          section .col:first-of-type > div a:nth-child(5) {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            color: #777;
+            font-size: 25px; }
+          section .col:first-of-type > div a:nth-child(6) {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            color: #777;
+            font-size: 25px; }
+    section .col .title {
+      margin-top: 0; }
+      section .col .title::before {
+        content: '';
+        width: 35px;
+        height: 3px;
+        background: #DA0060;
+        display: block;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out; }
+      section .col .title:hover::before {
+        width: 160px; }
+    section .col aside {
+      margin-bottom: 10px; }
+      section .col aside a {
+        position: relative;
+        display: block; }
+        section .col aside a img {
+          width: 100%; }
+        section .col aside a h3 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 10px 5px 10px 0px;
+          background: rgba(0, 0, 0, 0.8);
+          color: white; }
+          section .col aside a h3 span {
+            width: 40px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            background: #DA0060;
+            color: white;
+            margin-right: 8px; }
+    @media (max-width: 767px) {
+      section .col.span_9_of_12 {
+        width: 100%; }
+      section .col.span_3_of_12 {
+        width: 100%; }
+      section .col {
+        margin-left: 0; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      section .col.span_9_of_12 {
+        width: 100%; }
+      section .col.span_3_of_12 {
+        width: 100%; }
+      section .col {
+        margin-left: 0; }
+        section .col > aside {
+          display: inline-block;
+          float: left;
+          width: 32.26%;
+          margin: 1% 0 1% 1.6%; }
+          section .col > aside:first-of-type {
+            margin-left: 0; }
+          section .col > aside:nth-of-type(3n+1) {
+            margin-left: 0; } }
+
 /* === Main Style === */
 * {
   box-sizing: border-box; }
@@ -213,7 +333,7 @@ a {
 
 /* === Top-bar Background Image Path === */
 header section {
-  background: url("../../img/stripes.png") repeat; }
+  background: url("../../../img/stripes.png") repeat; }
 
 /* === Article Page === */
 header ~ article {

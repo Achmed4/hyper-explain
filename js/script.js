@@ -3,10 +3,12 @@
 
     function openNav() {
         $("nav").css('width', '100%');
+        $('body').css('overflow', 'hidden');
     }
 
     function closeNav() {
         $("nav").css('width', '0%');
+        $('body').css('overflow', 'auto');
     }
 
     /* Open when someone clicks on the Hamburger button */

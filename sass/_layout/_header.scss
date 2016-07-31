@@ -69,11 +69,9 @@ header {
             ul {
                 @media (max-width: 767px) {
                     position: relative;
-                    // top: 25%; /* 25% from the top */
                     top: 15%;
                     width: 100%;
                     text-align: center;
-                    // margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
                 }
                 li {
                     display: inline-block;
@@ -85,7 +83,7 @@ header {
                         margin: $zero;
                         padding: 8px;
                         font-size: 25px;
-                        display: block; /* Display block instead of inline-block */
+                        display: block;
                         height: auto;
                     }
                     > a {

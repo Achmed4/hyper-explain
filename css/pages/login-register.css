@@ -80,7 +80,6 @@ header main {
         padding: 8px;
         font-size: 25px;
         display: block;
-        /* Display block instead of inline-block */
         height: auto; } }
     header main > nav ul li > a {
       display: block;

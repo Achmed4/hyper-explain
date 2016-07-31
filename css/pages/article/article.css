@@ -65,12 +65,9 @@ header main {
   @media (max-width: 767px) {
     header main > nav ul {
       position: relative;
-      top: 25%;
-      /* 25% from the top */
+      top: 15%;
       width: 100%;
-      text-align: center;
-      margin-top: 30px;
-      /* 30px top margin to avoid conflict with the close button on smaller screens */ } }
+      text-align: center; } }
   header main > nav ul li {
     display: inline-block;
     height: 60px;
@@ -83,7 +80,8 @@ header main {
         padding: 8px;
         font-size: 25px;
         display: block;
-        /* Display block instead of inline-block */ } }
+        /* Display block instead of inline-block */
+        height: auto; } }
     header main > nav ul li > a {
       display: block;
       color: white;
@@ -103,7 +101,18 @@ header main {
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
       z-index: 1;
-      display: none; }
+      text-align: center; }
+      @media (max-width: 767px) {
+        header main > nav ul li > div {
+          display: block;
+          width: 100%;
+          min-width: auto;
+          min-height: auto;
+          opacity: 1;
+          visibility: visible;
+          position: relative;
+          top: 0;
+          background: transparent; } }
       header main > nav ul li > div > a {
         display: inline-block;
         border-radius: 5px;
@@ -112,6 +121,9 @@ header main {
         color: white;
         text-align: center;
         padding: 5px; }
+        @media (max-width: 767px) {
+          header main > nav ul li > div > a span {
+            font-size: 18px; } }
         header main > nav ul li > div > a:nth-child(3n+1) {
           margin-left: 0; }
         header main > nav ul li > div > a:hover {

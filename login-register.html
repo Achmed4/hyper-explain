@@ -6,7 +6,7 @@
         <title>Hyper Explain</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/pages/contact-us.css" />
+        <link rel="stylesheet" href="css/pages/login-register.css" />
         <link rel="stylesheet" href="css/grid.css" />
     </head>
     <body>
@@ -92,36 +92,57 @@
             </main>
         </header>
 
-        <!-- Form -->
+        <!-- Login & Register -->
         <section>
-            <form>
+            <div class="section group">
                 <div class="container">
-                    <h1>Contact Us</h1>
-                    <div class="section group">
-                        <div class="col span_6_of_12">
+                    <div class="col span_6_of_12">
+                        <h2>Login</h2>
+                        <form>
+                            <div>
+                                <label>Your Email</label>
+                                <input type="email" required/>
+                            </div>
+                            <div>
+                                <label>Your Password</label>
+                                <input type="password" required/>
+                            </div>
+                            <div>
+                                <input type="checkbox" required/>
+                                <label>Remember Me</label>
+                                <a href="#">Forget Your Password</a>
+                            </div>
+                            <div>
+                                <button type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col span_6_of_12">
+                        <h2>Register</h2>
+                        <form>
                             <div>
                                 <label>Your Name</label>
                                 <input type="text" required/>
                             </div>
                             <div>
                                 <label>Your Email</label>
-                                <input type="text" required/>
+                                <input type="email" required/>
                             </div>
                             <div>
-                                <label>Subject</label>
-                                <input type="text" required/>
+                                <label>Your Password</label>
+                                <input type="password" required/>
                             </div>
-                        </div>
-                        <div class="col span_6_of_12">
                             <div>
-                                <label>Your Message</label>
-                                <textarea cols="40" rows="12"></textarea>
+                                <label>Confirm Password</label>
+                                <input type="password" required/>
                             </div>
-                        </div>
+                            <div>
+                                <button type="submit">Register</button>
+                            </div>
+                        </form>
                     </div>
-                    <button type="submit">Send</button>
                 </div>
-            </form>
+            </div>
         </section>
 
         <!-- Footer -->

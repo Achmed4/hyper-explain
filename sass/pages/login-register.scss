@@ -1,0 +1,99 @@
+/* === Importing Helpers === */
+@import "../_helpers/_variables.scss";
+@import "../_helpers/_mixins.scss";
+
+/* === Importing Layout === */
+@import "../_layout/_header.scss";
+@import "../_layout/_footer.scss";
+
+/* === Main Style === */
+@include mainstyle;
+@include image-bg;
+
+/* === Top-bar Background Image Path === */
+header section {
+    background: url("../../img/stripes.png") repeat;
+    background-color: #dfe3e5;
+}
+
+/* === Login & Register Page === */
+
+header ~ section {
+    padding: $mainPadding;
+    .container {
+        text-align: left;
+        .col {
+            padding: $ten;
+            h2 {
+                position: relative;
+                display: block;
+                font-weight: bold;
+                padding-bottom: $ten;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: $zero;
+                    width: 55px;
+                    height: 4px;
+                    background: $black;
+                    display: block;
+                    margin-bottom: 5px;
+                    transition: $transition;
+                }
+                &:hover::before {
+                    width: 105px;
+                    background: $mainColor;
+                }
+            }
+            form {
+                > div {
+                    text-align: left;
+                    margin-bottom: 30px;
+                    label:first-child {
+                        display: block;
+                        font-weight: bold;
+                        margin-bottom: $ten;
+                    }
+                    input[type="text"], input[type="password"], input[type="email"] {
+                        width: 100%;
+                        border: $zero;
+                        outline: $zero;
+                        background: $topbarbg;
+                        padding: $ten;
+                    }
+                    a {
+                        color: steelblue;
+                    }
+                    button {
+                        padding: $ten 30px;
+                        cursor: pointer;
+                        background: $mainColor;
+                        color: $white;
+                        border: 2px solid $mainColor;
+                        font-weight: bold;
+                        transition: $transition;
+                        &:hover {
+                            background: $white;
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+            &:last-of-type {
+                padding-left: 20px;
+                @media (max-width: 767px) {
+                    padding-left: $zero;
+                }
+            }
+            @media (max-width: 767px) {
+                & {
+                    margin-left: $zero;
+                }
+                &.span_6_of_12 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
